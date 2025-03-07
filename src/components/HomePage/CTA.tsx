@@ -103,7 +103,7 @@ export default function Hero() {
             </div>
             
             {/* Advanced CSS animations and effects */}
-            <style jsx>{`
+            <style>{`
                 /* Floating animations for background elements */
                 @keyframes float-slow {
                     0%, 100% { transform: translateY(0) translateX(0); }

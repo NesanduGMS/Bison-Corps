@@ -168,7 +168,7 @@ const GetQuote = () => {
           name="description"
           value={formData.description}
           onChange={handleChange}
-          rows="4"
+          rows={4}
           className="w-full p-3 rounded-lg border border-gray-700 focus:ring-2 focus:ring-amber-500 focus:border-amber-500 bg-black text-white shadow-sm resize-none"
           placeholder="Tell us about your project requirements, goals, and specific needs..."
           required

@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
-import Logo from '../assets/Logo.png'; // Make sure this path is correct
+import Logo from '../assets/Logo.png';
+import Logo2 from '../assets/Logo2.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -57,28 +58,24 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           {/* Logo Section with animation */}
-          <Link 
-    to="/" 
-    className="flex items-center group"
->
-    <div className="overflow-hidden rounded-full">
-        <img 
-            src={Logo} 
-            alt="BISON Corps Logo" 
-            className="h-14 w-auto" 
-        />
-    </div>
-    <div className="ml-3 overflow-hidden">
-        <span className="text-2xl font-bold relative inline-block">
-            <span className={`transition-colors duration-300 ${scrolled ? 'text-[#001F3F]' : 'text-white'}`}>
-                BISON
-            </span>
-            <span className="text-amber-500"> Corps</span>
-            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-500 group-hover:w-full transition-all duration-300"></span>
-        </span>
-    </div>
-</Link>
-
+          <Link to="/" className="flex items-center group">
+            <div className="overflow-hidden rounded-full">
+              <img
+                src={scrolled ? Logo : Logo2}
+                alt="BISON Corps Logo"
+                className="h-14 w-auto"
+              />
+            </div>
+            <div className="ml-3 overflow-hidden">
+              <span className="text-2xl font-bold relative inline-block">
+                <span className={`transition-colors duration-300 ${scrolled ? 'text-[#001F3F]' : 'text-white'}`}>
+                  BISON
+                </span>
+                <span className="text-amber-500"> Corps</span>
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-500 group-hover:w-full transition-all duration-300"></span>
+              </span>
+            </div>
+          </Link>
 
           {/* Desktop Menu with hover effects */}
           <div className="hidden md:flex items-center space-x-2">

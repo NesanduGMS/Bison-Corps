@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import HeroImage from '../../assets/HomePage/Hero.jpg'; // Use your hero image
+import HeroImage from '../../assets/HomePage/Hero.jpg';
 import { useState, useEffect } from 'react';
 
 export default function HeroSection() {
