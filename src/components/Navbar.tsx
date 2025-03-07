@@ -6,7 +6,7 @@ import Logo from '../assets/Logo.png'; // Make sure this path is correct
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [hoveredItem, setHoveredItem] = useState(null);
+  const [hoveredItem, setHoveredItem] = useState<string | null>(null);
   const location = useLocation();
 
   // Handle scroll effect
@@ -36,7 +36,7 @@ const Navbar = () => {
       : 'bg-transparent py-6'}
   `;
 
-  const linkClass = (path) => `
+  const linkClass = (path: string) => `
     relative px-4 py-2 rounded-md transition-all duration-300 text-lg font-medium
     ${location.pathname === path 
       ? 'text-amber-500 font-bold' 
