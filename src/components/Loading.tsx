@@ -68,7 +68,7 @@ const Loading: React.FC = () => {
                 backgroundColor: 'white',
                 borderRadius: '50%',
                 margin: '0 5px',
-                animation: `fadeInOut 1.5s infinite ${index * 0.3}s`,
+                animation: `fadeInOut 1.5s infinite ${index * 0.2}s`,
               }}
             />
           ))}
