@@ -21,7 +21,7 @@ const TeamShowcase = () => {
             {/* Header with animated underline */}
             <div className="relative z-10 mb-8 text-center">
                 <h1 className="text-3xl md:text-4xl font-bold text-center text-white mb-3">
-                    Our Engineering <span className="text-gradient">Team</span>
+                    Our <span className="text-gradient">Team</span>
                 </h1>
                 <div className="w-16 h-1 bg-gradient-to-r from-amber-500 to-[#001F3F] mx-auto"></div>
             </div>
@@ -57,7 +57,7 @@ const TeamShowcase = () => {
                 </svg>
             </div>
 
-            <style jsx>{`
+            <style>{`
                 /* Text gradient animation */
                 .text-gradient {
                     background: linear-gradient(to right, #FFB800, #001F3F);
